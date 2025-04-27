@@ -4,26 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरा चैटबॉट</title>
-    <!-- style.css को लिंक करें -->
+    <title>RR Digital Library चैटबॉट</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #chat-container h1 img.logo {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <div id="chat-container">
-        <h1>बॉट से बात करें</h1>
-        <!-- चैट मैसेज दिखाने का एरिया -->
+        <h1>
+            <img src="rr_logo.png" alt="RR Digital Library Logo" class="logo">
+            RR digital library
+        </h1>
         <div id="chat-output">
-            <p class="bot-message"><strong>Bot:</strong> नमस्कार! मैं आपकी कैसे मदद कर सकता हूँ?</p>
+            <p class="bot-message"><strong>Bot:</strong> नमस्कार! RR Digital Library में आपका स्वागत है। मैं आपकी कैसे मदद कर सकता हूँ?</p>
         </div>
-        <!-- इनपुट एरिया -->
         <div id="input-area">
             <input type="text" id="user-input" placeholder="अपना संदेश यहाँ लिखें..." autocomplete="off">
             <button id="send-button">भेजें</button>
         </div>
-         <!-- स्टेटस दिखाने का एरिया -->
-        <div id="status-area"></div>
+         <div id="status-area"></div>
     </div>
-    <!-- script.js को अंत में लिंक करें -->
     <script src="script.js"></script>
 </body>
 </html>
